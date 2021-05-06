@@ -1,0 +1,5 @@
+FROM openjdk:11
+WORKDIR /usr/myserver/
+COPY ./HTTPREQ.jar /usr/myserver/
+ENTRYPOINT java -cp HTTPREQ.jar Http
+EXPOSE 8080
